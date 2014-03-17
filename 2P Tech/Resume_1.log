@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.10.21)  14 MAR 2014 23:15
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.10.21)  17 MAR 2014 19:16
 entering extended mode
  %&-line parsing enabled.
 **Resume_1.tex
@@ -74,7 +74,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 Here is how much of TeX's memory you used:
  314 strings out of 493848
  3333 string characters out of 1152822
- 57101 words of memory out of 3000000
+ 56101 words of memory out of 3000000
  3666 multiletter control sequences out of 15000+50000
  7946 words of font info for 28 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
@@ -87,7 +87,7 @@ c/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
 fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/shar
 e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texmf-tex
 live/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Resume_1.pdf (2 pages, 127622 bytes).
+Output written on Resume_1.pdf (2 pages, 127139 bytes).
 PDF statistics:
  41 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
