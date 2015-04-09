@@ -1,4 +1,4 @@
-	\documentclass[a4paper,9pt]{article}
+\documentclass[a4paper,9pt]{article}
 
 \usepackage[margin=0.95in]{geometry}
 \usepackage{inconsolata}
@@ -26,6 +26,7 @@
 \definecolor{mydarkgray}{rgb}{0.4,0.4,0.4}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
 \definecolor{myrust}{rgb}{0.77,0,0}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
 \pagestyle{empty}
 
 \lstset{ %
@@ -59,7 +60,7 @@
 \hypersetup{
   colorlinks=true,
   linkcolor=red,
-  urlcolor=black,
+  urlcolor=darkblue,
   citecolor=green,
   linktoc=page
 }
@@ -69,7 +70,7 @@
 % \vspace*{4.6cm}
 
 \begin{tabularx}{\textwidth}{p{0.48\textwidth}>{\raggedleft\arraybackslash}p{0.48\textwidth}}
-\textcolor{myrust}{\Huge{Ranveer Aggarwal}} & \textcolor{mydarkgray}{Hostel 3, IIT Bombay}\\
+\textcolor{myrust}{\Huge{Ranveer Aggarwal}} & \textcolor{mydarkgray}{Room 148, Hostel 3, IIT Bombay}\\
  & \textcolor{mydarkgray}{Powai 400076, Mumbai, India}\\
  & \href{mailto:ranveer@cse.iitb.ac.in}{\textcolor{blue}{ranveer@cse.iitb.ac.in}}\\
  & \href{http://www.ranveeraggarwal.com}{\textcolor{blue}{www.ranveeraggarwal.com}}\\
@@ -85,10 +86,17 @@ $\bullet$ Pursuing \textbf{B. Tech with Honors} in Computer Science and Engineer
 $\bullet$ \textbf{Interests:} Computer Graphics, Computer and Network Security, Web Development\\
 $\bullet$ \textbf{GPA:} 7.25/10.00 (after 5 semesters)\\\\
 
+\textcolor{myrust}{\large{\textsc{Work Experience}}}\textcolor{mygray}{\sout{\hfill}}\\\\
+\small %\normalsize
+$\bullet$ \textbf{Season of KDE Intern}, PlanetKDE\hfill \textit{Winter 2014}\\
+\textit{Mentor}: \href{http://jriddell.org/about-me/}{\textcolor{mydarkgray}{Jonathan Riddell}}\\
+\hspace*{0.35cm}$\circ$ Redesigned and redeveloped \href{https://planetkde.org/}{PlanetKDE}, KDE’s blog aggregator built on rawdog\\
+\hspace*{0.35cm}$\circ$ Built a mobile friendly, KDE design scheme compliant, flat interface with social media plugins, working closely with KDE’s design team and the dev community\\\\
+
 \textcolor{myrust}{\large{\textsc{Key Academic Projects}}}\textcolor{mygray}{\sout{\hfill}}\\\\
 \small %\normalsize
 \textbf{$\bullet$} \href{https://github.com/ranveeraggarwal/lightcuts}{\textbf{Lightcuts}}\hfill\textit{Spring 2015}\\
-\hspace*{0.35cm}$\circ$ Implemented the research paper `Lightcuts' [SIGGRAPH 2005] in a team of two for the Advanced Computer Graphics course project. The paper describes a scalable framework for computing realistic illumination\\
+\hspace*{0.35cm}$\circ$ Implemented the research paper \href{http://www.cs.cornell.edu/~kb/projects/lightcuts/}{`Lightcuts' [SIGGRAPH 2005]} in a team of two for the Advanced Computer Graphics course project. The paper describes a scalable framework for computing realistic illumination\\
 \hspace*{0.35cm}$\circ$ Developed it as a plugin for \href{http://www.pbrt.org/}{\textsl{pbrt-v2}}, an open source renderer based on the book `Physically Based Rendering'\\
 \textbf{$\bullet$} \href{https://github.com/ranveeraggarwal/renderman-transformer/}{\textbf{Rendering with Photorealistic Renderman}} \hfill \textit{Spring 2015}\\
 \hspace*{0.35cm}$\circ$ Wrote shaders and rendered raytraced scenes using Pixar's rendering software PRMan\\
@@ -116,21 +124,14 @@ $\bullet$ \textbf{GPA:} 7.25/10.00 (after 5 semesters)\\\\
 \hspace*{0.35cm}$\circ$ Worked in a team of 4 to develop a program that recursively breaks down the \LaTeX{} chunks into smaller components and parses them at the token level\\
 \hspace*{0.35cm}$\circ$ The application won the $1^{st}$ place at Microsoft Code.Fun.Do, 2014 and is currently live on the Windows App Store\\\\
 
-\textcolor{myrust}{\large{\textsc{Work Experience}}}\textcolor{mygray}{\sout{\hfill}}\\\\
-\small %\normalsize
-$\bullet$ \textbf{Season of KDE Intern}, PlanetKDE\hfill \textit{Winter 2014}\\
-\textit{Mentor}: \textcolor{mydarkgray}{Jonathan Riddell}\\
-\hspace*{0.35cm}$\circ$ Redesigned and redeveloped PlanetKDE, KDE’s blog aggregator built on rawdog\\
-\hspace*{0.35cm}$\circ$ Built a mobile friendly, KDE design scheme compliant, flat interface with social media plugins, working closely with KDE’s design team and the dev community\\\\
-
 \pagebreak
 
 \textcolor{myrust}{\large{\textsc{Seminars}}}\textcolor{mygray}{\sout{\hfill}}\\\\
 \small %\normalsize
-$\bullet$ \textbf{Bidirectional Lightcuts}\hfill\textit{Spring 2015}\\
+$\bullet$ \href{http://www.cs.cornell.edu/~kb/publications/SIG12BidirLC.pdf}{\textbf{Bidirectional Lightcuts}}\hfill\textit{Spring 2015}\\
 \textcolor{mydarkgray}{\textit{Advanced Computer Graphics course}}\hfill\textit{Guide}: \textcolor{mydarkgray}{Prof Parag Chaudhuri}\\
 If real-world scenes are to be modelled, we need a fast, noise free rendering algorithm that handles all kinds of materials like glossy materials, and phenomenon like subsurface scattering. General unbiased algorithms like Path Tracing produce a lot of noise whereas specialised noise free algorithms like Instant Radiosity are biased, meaning several important illumination features might be missing. The paper, an extension of a previous paper titled `Lightcuts', implemented by the same author extends support to a wider variety of materials and phenomenon, while maintaining scalability and low noise. It uses clever weighing strategies to lower the bias in VPL-based algorithms and demonstrates scalable, efficient, and low noise rendering of scenes with highly complex materials including gloss, BSSRDFs, and anisotropic volumetric models. This was presented in a team of 2 for an advanced computer graphics course.\\\\
-$\bullet$ \textbf{LAO*: A Heuristic Search Algorithm That Finds Solution with Loops}\hfill\textit{Spring 2015}\\
+$\bullet$ \href{http://rbr.cs.umass.edu/papers/HZaij01b.pdf}{\textbf{LAO*: A Heuristic Search Algorithm That Finds Solution with Loops}}\hfill\textit{Spring 2015}\\
 \textcolor{mydarkgray}{\textit{Artificial Intelligence course}}\hfill\textit{Guide}: \textcolor{mydarkgray}{Prof Pushpak Bhattacharya}\\
 Classic heuristic search algorithms can find solutions that take the form of a simple path (A*), a tree, or an acyclic graph (AO*). This paper describes a novel generalization of heuristic search, called LAO*, that can find solutions with loops. It is shown that LAO* can be used to solve Markov decision problems and that it shares the advantage heuristic search has over dynamic programming for other classes of problems. Given a start state, it finds an optimal solution without evaluating the entire state space. This paper was presented as a part of an Artificial Intelligence course.\\\\
 
@@ -149,15 +150,15 @@ $\bullet$ Stood second in institute-level remote-controlled football-playing bot
 
 \textcolor{myrust}{\large{\textsc{Technical Skills}}}\textcolor{mygray}{\sout{\hfill}}\\\\
 \small %\normalsize
-$\bullet$ \textbf{Knowledgeable about} C\verb!++!, OpenGL, Python, HTML, CSS, Scheme\\
+$\bullet$ \textbf{Knowledgeable about} C/C\verb!++!, OpenGL, Python, HTML, CSS, Scheme\\
 $\bullet$ \textbf{Basic familiarity with} Java, JavaScript, PHP, Renderman, VHDL, Bash, MIPS-Assembly\\\\
 
 \textcolor{myrust}{\large{\textsc{Campus Activities}}}\textcolor{mygray}{\sout{\hfill}}\\\\
 \small %\normalsize
-$\bullet$ Web and Coding Club, IIT Bombay\hfill\textit{May 2013 -- April 2015}\\
+$\bullet$ \textbf{Web and Coding Club, IIT Bombay}\hfill\textit{May 2013 -- April 2015}\\
 \hspace*{0.35cm}$\circ$ As a manager, led a two-tier team consisting of 9 co-ordinators to encourage programming as a hobby\\
 \hspace*{0.35cm}$\circ$ Mentored 15 freshmen teams under Institute Technical Summer Projects out of which 9 successfully completed their projects and 3 came up with prototypes\\
-$\bullet$ National Sports Organisation \hfill\textit{July 2012 -- April 2013}\\
+$\bullet$ \textbf{National Sports Organisation} \hfill\textit{July 2012 -- April 2013}\\
 \hspace*{0.35cm}$\circ$ Completed the year-long course by National Sports Organization in Squash\\\\
 
 % \Large{\textsc{Additional Courses Taken}}\vspace{1.5pt}
@@ -175,6 +176,6 @@ $\bullet$ National Sports Organisation \hfill\textit{July 2012 -- April 2013}\\
 \small %\normalsize
 $\bullet$ Contributor to several KDE projects including Krita and PlanetKDE\\
 $\bullet$ Developed an application, titled \href{https://github.com/ranveeraggarwal/Rumor-Roll}{Rumor Roll!} in php using Yahoo! Boss API and YQL that outputs rumours related to the given query at Yahoo! HackU 2013.\\
-$\bullet$ Built a JavaScript based game, on the lines of popular game, Chain Reaction\\
+$\bullet$ Built a JavaScript based game \href{https://github.com/ranveeraggarwal/fission}{Fission}, on the lines of popular game, Chain Reaction\\
 $\bullet$ Enthusiastic in swimming and water adventure sports\\
 \end{document}
